@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ImageIcon from '@mui/icons-material/Image';
 import { Avatar, ListItem, ListItemAvatar } from '@mui/material';
+
 import { ItemText } from './ItemText';
 
 const PostItem = ({ title, description }) => {

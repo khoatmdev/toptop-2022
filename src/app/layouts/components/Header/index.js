@@ -1,19 +1,14 @@
 import React from 'react';
-import {
-    AppBar,
-    Box,
-    Button,
-    IconButton,
-    Toolbar,
-    Typography,
-} from '@mui/material';
+import { Button, IconButton, Toolbar, Typography } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import Link from '@mui/material/Link';
+
+import { Wrapper } from './Wrapper';
+import { AppBar } from './AppBar';
 
 const Header = () => {
     return (
-        <Box sx={{ flexGrow: 0 }}>
-            <AppBar position="static">
+        <AppBar position="static">
+            <Wrapper>
                 <Toolbar>
                     <IconButton
                         size="large"
@@ -34,39 +29,14 @@ const Header = () => {
                             fontFamily: 'monospace',
                             fontWeight: 700,
                             letterSpacing: '.3rem',
-                            color: 'inherit',
                             textDecoration: 'none',
                         }}>
                         LOGO
                     </Typography>
-                    <Box
-                        sx={{
-                            flexGrow: 1,
-                            display: { xs: 'none', md: 'flex' },
-                        }}>
-                        <Link
-                            to="/"
-                            sx={{
-                                mr: 3,
-                                color: 'white',
-                                display: 'block',
-                            }}>
-                            Home
-                        </Link>
-                        <Link
-                            to="/example"
-                            sx={{
-                                mr: 3,
-                                color: 'white',
-                                display: 'block',
-                            }}>
-                            Example
-                        </Link>
-                    </Box>
                     <Button color="inherit">Login</Button>
                 </Toolbar>
-            </AppBar>
-        </Box>
+            </Wrapper>
+        </AppBar>
     );
 };
 

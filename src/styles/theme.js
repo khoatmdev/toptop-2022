@@ -4,7 +4,14 @@ import { createTheme } from '@mui/material/styles';
 
 const LinkBehavior = React.forwardRef((props, ref) => {
     const { href, ...other } = props;
-    return <RouterLink ref={ref} to={href} {...other} />;
+    return (
+        <RouterLink
+            ref={ref}
+            to={href}
+            {...other}
+            style={{ textDecoration: 'none' }}
+        />
+    );
 });
 
 export const theme = createTheme({

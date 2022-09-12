@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <>
             <Helmet>
-                <title>Home Page</title>
+                <title>TopTop - Decor Your Soul</title>
                 <meta name="description" content="Home Page" />
             </Helmet>
             <PageWrapper>
